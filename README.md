@@ -14,7 +14,8 @@ Docker can build images automatically by reading the instructions from a Dockerf
 ````
 FROM nginx
 COPY    .     /usr/share/nginx/html
-```
+````
+
 Another Dockerfile example with more instruction for creating an image.This is a typical Dockerfile required for any **node.js** application.
 ````
 FROM alpine
