@@ -38,8 +38,7 @@ After creating an account you can simply push your image to docker hub repositor
   ````
   docker build -t asadzoot/first-docker-app
   ````
-  OR
-  ````
+  OR 
   - Second option is docker tag command which help make a new image from existing image with different name tags
   ````
   docker tag first-docker-app  asadzoot/first-docker-app
