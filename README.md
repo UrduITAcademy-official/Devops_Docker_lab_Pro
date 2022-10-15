@@ -30,9 +30,10 @@ ENTRYPOINT ["node", "./app.js"]
 ````
 ## PUSHING IMAGES
 One of the main advantage of image is portability, meaning you can use it from anywhere in the world. To achieve above you need to do only one thing, save your image to registry like **docker hub**.
-This saving image is also referred as pushing image to the docker hub. You need to sign up for the account first at **https://hub.docker.com/**.
-After creating an account you can simply push your image to docker hub repository. One thing important to know is for pushing an image to docker hub, we need our images to be built as **username/repository:tag**.
 
+This saving image is also referred as pushing image to the docker hub. You need to sign up for the account first at **https://hub.docker.com/**.
+
+After creating an account you can simply push your image to docker hub repository. One thing important to know is for pushing an image to docker hub, we need our images to be built as **username/repository:tag**.
   - We have two options either we create a new image from same docker file with 
   ````
   docker build -t asadzoot/first-docker-app
