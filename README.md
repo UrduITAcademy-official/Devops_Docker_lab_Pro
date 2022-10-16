@@ -1,5 +1,5 @@
 ### Devops_Docker_lab_Pro
-# CONTAINERIZING AN APP FROM SCRATCH
+# 🚀CONTAINERIZING AN APP FROM SCRATCH
 The process of taking an application and configuring it to run as a container is called **“containerizing”**. Sometimes we call it **“Dockerizing”**.
 
 ![image](https://user-images.githubusercontent.com/71556060/196003045-e9c2872b-b5fb-4230-b19f-7e4ee8fe2c62.png)
@@ -28,7 +28,7 @@ ENV CREATEDBY="Aamir Pinger"
 EXPOSE 8080
 ENTRYPOINT ["node", "./app.js"]
 ````
-## PUSHING IMAGES
+## 🎯PUSHING IMAGES
 One of the main advantage of image is portability, meaning you can use it from anywhere in the world. To achieve above you need to do only one thing, save your image to registry like **docker hub**.
 
 This saving image is also referred as pushing image to the docker hub. You need to sign up for the account first at **https://hub.docker.com/**.
@@ -49,13 +49,13 @@ docker push asadzoot/first-docker-app
 ````
 **Congratulation!** _You have uploaded your image to docker hub registry and your image is now portable_
 
-## INSPECTING IMAGE
+## 📢INSPECTING IMAGE
 To inspect layers of your image
 ````
 docker history node-app-image
 docker inspect node-app-image
 ````
-## BIND MOUNTS
+## 🖇️BIND MOUNTS
 
 By default all files created inside a container are stored on a writable container layer. This means that the data doesn’t persist when that container no longer exists, and it can be difficult to get the data out of the container if another process needs it.
 ![image](https://user-images.githubusercontent.com/71556060/196003682-0d7a42e7-1972-4c6c-b244-513634937045.png)
