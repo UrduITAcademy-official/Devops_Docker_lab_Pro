@@ -64,10 +64,21 @@ Docker has two options for containers to store files in the host machine, so tha
   - Volumes,
   - Bind mounts
 
+By using bind mount, a file or directory on the host machine is mounted into a container
+````
+docker run   -d  --name bindtest  -v ~/target-on-host:/app  nginx:latest
+````
+````
+docker exec -it bindtest sh
+# cd app
+# echo “this is example file for docker bind” > test.txt
+# ls
+test.txt
+# exit
+````
 
 
-
-
+Thank you and God bless you all!
 
 
 
