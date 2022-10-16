@@ -1,6 +1,3 @@
-<h1 align="center">Hi 👋, I'm SYED ASAD RAZA</h1>
-<h3 align="center">A passionate DevOps Instructor | Microsoft Certified Trainer | Cloud & DevOps Engineer at Ascend healthcare | 云工程师 | Microsoft Azure Cloud Engineer | ExAzure Administrator at Sysytems Limited </h3>
-
 ### Devops_Docker_lab_Pro
 # CONTAINERIZING AN APP FROM SCRATCH
 The process of taking an application and configuring it to run as a container is called **“containerizing”**. Sometimes we call it **“Dockerizing”**.
