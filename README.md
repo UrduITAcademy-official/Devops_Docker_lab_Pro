@@ -8,8 +8,6 @@ The process of containerizing an app looks like this:
   - Create a Dockerfile that describes your app, its dependencies, and how to run it
   - Feed this Dockerfile into the docker image build command to create an image
   - Create and run a container from that image
-  
-![image](https://user-images.githubusercontent.com/71556060/197335961-9d455359-054e-4236-bb01-4535cf7c045f.png)
 
 ## Dockerfile
 Docker can build images automatically by reading the instructions from a Dockerfile.A Dockerfile is a simple text file with instructions on how to build your images
@@ -18,7 +16,6 @@ Docker can build images automatically by reading the instructions from a Dockerf
 FROM nginx
 COPY    .     /usr/share/nginx/html
 ````
-
 Another Dockerfile example with more instruction for creating an image.This is a typical Dockerfile required for any **node.js** application.
 ````
 FROM alpine
@@ -31,6 +28,8 @@ ENV CREATEDBY="Aamir Pinger"
 EXPOSE 8080
 ENTRYPOINT ["node", "./app.js"]
 ````
+![2022-06-22-docker-process](https://user-images.githubusercontent.com/71556060/197336100-a7aee270-e0a6-47de-aeaf-32a0955dc01a.png)
+
 ## 🎯PUSHING IMAGES
 One of the main advantage of image is portability, meaning you can use it from anywhere in the world. To achieve above you need to do only one thing, save your image to registry like **docker hub**.
 
