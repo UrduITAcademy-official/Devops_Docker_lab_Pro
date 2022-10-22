@@ -8,10 +8,13 @@ The process of containerizing an app looks like this:
   - Create a Dockerfile that describes your app, its dependencies, and how to run it
   - Feed this Dockerfile into the docker image build command to create an image
   - Create and run a container from that image
+  
+![image](https://user-images.githubusercontent.com/71556060/197335961-9d455359-054e-4236-bb01-4535cf7c045f.png)
 
 ## Dockerfile
 Docker can build images automatically by reading the instructions from a Dockerfile.A Dockerfile is a simple text file with instructions on how to build your images
 ````
+
 FROM nginx
 COPY    .     /usr/share/nginx/html
 ````
