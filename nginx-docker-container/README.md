@@ -76,3 +76,21 @@ EXPOSE 80/tcp
 # Run the Nginx server
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
 ````
+
+## 2. Running the Image
+Once our image builds successfully, we are going to take it for a test run.
+
+Let’s issue the following command to run the server:
+````
+docker run -d -p 80:80 haidar/server
+````
+Let’s break this down:
+
+> the run sub-command specifies that we want to run the container
+> the -d flag indicates that we want to run the image in detached mode
+> the -p option signifies the port number in the format local-port:container-port. In this case, we are mapping port 80 in the container to port 80 on the server
+> the final argument nginx specifies the tag of the image we want to run
+
+Let’s fire up a browser and check our newly-built server:
+![image](https://user-images.githubusercontent.com/71556060/201492262-4cb99a81-f81e-447e-aaeb-7429ddf44350.png)
+
