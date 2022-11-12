@@ -19,12 +19,12 @@ COPY    .     /usr/share/nginx/html
 Another Dockerfile example with more instruction for creating an image.This is a typical Dockerfile required for any **node.js** application.
 ````
 FROM alpine
-LABEL maintainer="aamirpinger@yahoo.com"
+LABEL maintainer="syedasadrazadevops@gmail.com"
 RUN apk add --update nodejs nodejs-npm
 COPY      .     /src
 WORKDIR /src
 RUN npm install
-ENV CREATEDBY="Aamir Pinger"
+ENV CREATEDBY="syed asad raza"
 EXPOSE 8080
 ENTRYPOINT ["node", "./app.js"]
 ````
